@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Compiled TypeScript files
+dist/
+
+# Environment variables
+.env
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+
+# TypeScript build cache
+*.tsbuildinfo
