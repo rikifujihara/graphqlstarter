@@ -59,6 +59,13 @@ const resolvers = {
       db.games.push(game);
       return game;
     },
+    updateGame(_, args) {
+      let game = db.games.find((game) => game.id === args.id);
+      for (let key in args.edits) {
+        game[key] = args.edits[key];
+      }
+      return game;
+    },
   },
 };
 
